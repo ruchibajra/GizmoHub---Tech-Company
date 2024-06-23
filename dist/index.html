@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="cursor-pointer">Gizmo Hub - The Tech Company</title>
+    <link href="./style.css" rel="stylesheet" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-poppins">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+      <div
+        class="container mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold">GizmoHub</div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#home" class="hover:text-gray-700">Home</a>
+          <a href="#product" class="hover:text-gray-700">Product</a>
+          <a href="#reviews" class="hover:text-gray-700">Reviews</a>
+          <a href="#contact" class="hover:text-gray-700">Contact</a>
+        </nav>
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button">
+            <svg
+              class="w-6 h-6 text-gray-500"
+              x-show="!showMenu"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li>
+          <a href="#home" class="block text-sm px-2 py-4 hover:bg-gray-200"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#product" class="block text-sm px-2 py-4 hover:bg-gray-200"
+            >Product</a
+          >
+        </li>
+        <li>
+          <a href="#reviews" class="block text-sm px-2 py-4 hover:bg-gray-200"
+            >Reviews</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="block text-sm px-2 py-4 hover:bg-gray-200"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="bg-cover bg-center h-screen"
+      style="background-image: url('path_to_your_image.jpg')"
+    >
+      <div
+        class="flex items-center justify-center h-full bg-black bg-opacity-50"
+      >
+        <div class="text-center text-white">
+          <h1 class="text-4xl font-bold mb-4">Discover the GizmoMax</h1>
+          <p class="text-xl mb-8">The Ultimate Gadget for Your Needs</p>
+          <a
+            href="#product"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </section>
+
+  <!-- Product Details Section -->
+<!-- Product Details Section -->
+<section id="product" class="container mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold text-center mb-8">GizmoMax Features</h2>
+  <div class="flex flex-col md:flex-row items-center">
+    <!-- Carousel -->
+    <div class="relative w-full md:w-1/2 mb-6 md:mb-0 md:mr-6">
+      <div class="carousel">
+        <div class="carousel-inner flex transition-transform duration-500 ease-in-out">
+          <div class="carousel-item w-full flex-shrink-0">
+            <img src="https://img.etimg.com/photo/msid-98815516,imgsize-24654/LavaZ3.jpg" alt="GizmoMax 1" class="w-full">
+          </div>
+          <div class="carousel-item w-full flex-shrink-0 hidden">
+            <img src="https://example.com/path_to_second_image.jpg" alt="GizmoMax 2" class="w-full">
+          </div>
+          <div class="carousel-item w-full flex-shrink-0 hidden">
+            <img src="https://example.com/path_to_third_image.jpg" alt="GizmoMax 3" class="w-full">
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Controls -->
+      <button class="absolute top-1/2 transform -translate-y-1/2 left-0 bg-gray-800 text-white px-2 py-1" id="prevBtn">
+        &#10094;
+      </button>
+      <button class="absolute top-1/2 transform -translate-y-1/2 right-0 bg-gray-800 text-white px-2 py-1" id="nextBtn">
+        &#10095;
+      </button>
+    </div>
+    <div class="md:w-1/2">
+      <div id="product-details">
+        <h3 class="text-2xl font-bold mb-4" id="product-name">GizmoMax 1</h3>
+        <p class="mb-4" id="product-description">GizmoMax is a state-of-the-art gadget designed to simplify your life with its amazing features:</p>
+        <ul class="list-disc list-inside mb-4" id="product-features">
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+          <li>Feature 4</li>
+        </ul>
+        <p class="text-xl font-bold mb-4" id="product-price">$199.99</p>
+        <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const slides = document.querySelectorAll('.carousel-item');
+  const productDetails = [
+    {
+      name: 'GizmoMax 1',
+      description: 'GizmoMax 1 is a state-of-the-art gadget designed to simplify your life with its amazing features:',
+      features: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4'],
+      price: '$199.99'
+    },
+    {
+      name: 'GizmoMax 2',
+      description: 'GizmoMax 2 offers enhanced performance and new features:',
+      features: ['Feature A', 'Feature B', 'Feature C', 'Feature D'],
+      price: '$249.99'
+    },
+    {
+      name: 'GizmoMax 3',
+      description: 'GizmoMax 3 is the latest version with cutting-edge technology:',
+      features: ['Feature X', 'Feature Y', 'Feature Z', 'Feature W'],
+      price: '$299.99'
+    }
+  ];
+  let currentSlide = 0;
+  const totalSlides = slides.length;
+
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    updateSlide((currentSlide + 1) % totalSlides);
+  });
+
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    updateSlide((currentSlide - 1 + totalSlides) % totalSlides);
+  });
+
+  function updateSlide(index) {
+    slides[currentSlide].classList.add('hidden');
+    currentSlide = index;
+    slides[currentSlide].classList.remove('hidden');
+
+    const { name, description, features, price } = productDetails[currentSlide];
+    document.getElementById('product-name').textContent = name;
+    document.getElementById('product-description').textContent = description;
+    document.getElementById('product-features').innerHTML = features.map(feature => `<li>${feature}</li>`).join('');
+    document.getElementById('product-price').textContent = price;
+  }
+</script>
+
+
+  <!-- Customer Reviews Section -->
+  <section id="reviews" class="bg-gray-100 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Customer Reviews</h2>
+      <div class="space-y-8">
+        <div class="bg-white p-6 rounded shadow">
+          <p class="text-gray-700 mb-4">"GizmoMax has changed my life! Highly recommend it."</p>
+          <p class="font-bold">- Customer 1</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <p class="text-gray-700 mb-4">"Amazing product with great features."</p>
+          <p class="font-bold">- Customer 2</p>
+        </div>
+        <!-- Add more testimonials as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+    <form class="w-full max-w-lg mx-auto bg-white p-8 rounded shadow">
+      <div class="mb-4">
+        <label class="block text-gray-700 mb-2" for="name">Name</label>
+        <input class="w-full px-3 py-2 border rounded" type="text" id="name" placeholder="Your Name">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 mb-2" for="email">Email</label>
+        <input class="w-full px-3 py-2 border rounded" type="email" id="email" placeholder="Your Email">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 mb-2" for="message">Message</label>
+        <textarea class="w-full px-3 py-2 border rounded" id="message" rows="5" placeholder="Your Message"></textarea>
+      </div>
+      <div class="text-center">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Send</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 py-6">
+    <div class="container mx-auto px-6 text-white text-center">
+      <p>&copy; 2024 GizmoMax. All rights reserved.</p>
+      <div class="mt-4">
+        <a href="#" class="text-gray-400 hover:text-white mx-2">Facebook</a>
+        <a href="#" class="text-gray-400 hover:text-white mx-2">Twitter</a>
+        <a href="#" class="text-gray-400 hover:text-white mx-2">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+    <!-- JS -->
+    <script>
+      const menuButton = document.querySelector(".mobile-menu-button");
+      const mobileMenu = document.querySelector(".mobile-menu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
